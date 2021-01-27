@@ -24,6 +24,10 @@ Para inicializá-la você precisa:
 
 **Para poder executar a subida do projeto através da sua IDE de preferencia, lembre-se de configurar a mesma para que não hajam conflitos com anotações como lombok. Link de referencia:** https://dicasdejava.com.br/como-configurar-o-lombok-no-eclipse/
 
-**USE A COLLECTION DO POSTMAN QUE SE ENCONTRA NA RAIZ DO PROJETO PARA FAZER OS TESTES**
+**USE A COLLECTION DO POSTMAN QUE SE ENCONTRA NA RAIZ DO PROJETO PARA FAZER OS TESTES. ESTA COLLECTION CONTEM AS URLS DA API PUBLICADA NO HEROKU.**
+
+**LINK DO DOCKER HUB PARA FAZER CLONE DA IMAGEM CASO NECESSÁRIO: https://hub.docker.com/repository/docker/willyanrodrigues/customer-register"**
+
+
 
 
