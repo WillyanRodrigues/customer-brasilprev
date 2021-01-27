@@ -9,7 +9,7 @@
 		<version>2.4.1</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>br.com.petz.customer</groupId>
+	<groupId>br.com.brasilprev.customer</groupId>
 	<artifactId>customer-register</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>customer-register</name>
@@ -59,6 +59,11 @@
 			<groupId>javax.validation</groupId>
 			<artifactId>validation-api</artifactId>
 			<version>2.0.0.Final</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
 
 
