@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "acb18927-08d7-49a1-85ae-e17fff83f715",
+		"name": "BRASILPREV",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CUSTOMER",
+			"item": [
+				{
+					"name": "CREATE CUSTOMER",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "brasilprev",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "brasilprev",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{  \n   \"address\": {  \n     \"city\": \"DIADEMA\",  \n     \"complement\": \"APARTAMENTO 36C\",  \n     \"country\": \"BRASIL\",  \n     \"number\": \"120\",  \n     \"streetName\": \"RUA SIGMA\",  \n     \"zipCode\": \"09912-010\"  \n   },  \n   \"document\": {  \n     \"number\": \"44158888596\",  \n     \"type\": \"CPF\"  \n   },  \n   \"email\": \"vinicius%40hotmail.com\",  \n   \"firstName\": \"Vinicius\",  \n   \"lastName\": \"Rodrigues\", \n   \"dateOfBirth\": \"1995-04-25\", \n   \"phones\": [  \n     {  \n       \"areaCode\": 11,  \n       \"countryCode\": 55,  \n       \"main\": true,  \n       \"phoneNumber\": \"964488884\"  \n     }  \n   ]  \n }"
+						},
+						"url": {
+							"raw": "http://localhost:8080/customer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET CUSTOMER",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "transaction-id",
+								"value": "1"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/customer?customerId=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"customer"
+							],
+							"query": [
+								{
+									"key": "customerId",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE CUSTOMER",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/customer/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"customer",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE CUSTOMER",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{  \n   \"address\": {  \n     \"city\": \"DIADEMA\",  \n     \"complement\": \"APARTAMENTO 78C\",  \n     \"country\": \"BRASIL\",  \n     \"number\": \"120\",  \n     \"streetName\": \"RUA SIGMA 75\",  \n     \"zipCode\": \"09912-010\"  \n   },  \n   \"document\": {  \n     \"number\": \"44158888596\",  \n     \"type\": \"CPF\"  \n   },  \n   \"email\": \"willyan%40hotmail.com\",  \n   \"firstName\": \"Vinicius\",  \n   \"lastName\": \"Rodrigues\",  \n   \"customerId\": 2,\n   \"phones\": [  \n     {  \n       \"areaCode\": 11,  \n       \"countryCode\": 55,  \n       \"main\": true,  \n       \"phoneNumber\": \"964488884\"  \n     },\n          {  \n       \"areaCode\": 11,  \n       \"countryCode\": 55,  \n       \"main\": true,  \n       \"phoneNumber\": \"964488883\"  \n     },\n               {  \n       \"areaCode\": 11,  \n       \"countryCode\": 55,  \n       \"main\": false,  \n       \"phoneNumber\": \"964488882\"  \n     } \n   ]  \n }"
+						},
+						"url": {
+							"raw": "http://localhost:8080/customer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"customer"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
