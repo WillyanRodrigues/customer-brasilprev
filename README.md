@@ -26,7 +26,7 @@ Para inicializá-la você precisa:
 
 **USE A COLLECTION DO POSTMAN QUE SE ENCONTRA NA RAIZ DO PROJETO PARA FAZER OS TESTES. ESTA COLLECTION CONTEM AS URLS DA API PUBLICADA NO HEROKU.**
 
-**LINK DO DOCKER HUB PARA FAZER CLONE DA IMAGEM CASO NECESSÁRIO: https://hub.docker.com/repository/docker/willyanrodrigues/customer-register"**
+**LINK DO DOCKER HUB PARA FAZER CLONE DA IMAGEM CASO NECESSÁRIO: https://hub.docker.com/repository/docker/willyanrodrigues/customer-register**
 
 
 
